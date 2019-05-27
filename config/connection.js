@@ -9,7 +9,7 @@ var connection = mysql.createConnection({
     database: "../db/TaconMadre_db"
   });
   
-  connection.connect(function(err) {
-    if (err) throw err;
-    // runSearch();
-  });
+  // connection.connect(function(err) {
+  //   if (err) throw err;
+  //   // runSearch();
+  // });

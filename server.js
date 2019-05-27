@@ -1,8 +1,7 @@
 const express = require("express");
-const app = express();
-const mysql = require("mysql");
 const exphbs = require("express-handlebars");
 // ************************************************************
+const app = express();
 
 var PORT = process.env.PORT || 3000;
 
