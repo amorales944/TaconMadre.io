@@ -8,14 +8,12 @@
 	<!-- <link rel="stylesheet" type="text/css" href="./assets/css/meyerWebReset.css" /> -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-	<link rel="stylesheet" type="text/css" href="/public/assets/css/taco_style.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/taco_style.css" />
 	<title>TaconMadre</title>
 </head>
 
 <body>
-
-	{{!-- <div class="head"> --}}
-	<div class="jumbotron jumbotron-fluid text-center">
+	<div class="jumbotron jumbotron-fluid text-center" id="jumbotronId">
 		<div class="container">
 			<img src="/assets/img/taco-title.png">
 			<img src="/assets/img/taco-truck.png" alt="HTML5 Icon" title="Icons made by Freepik from www.flaticon.com">
@@ -24,24 +22,19 @@
 	</div>
 
 	<div class="container-fluid">
-		{{!-- <form> --}}
-
 		<div class="row">
 			<div class="col-sm-6">
 				<div class="card">
 					<div class="card-header">
-						Search Paramaters
+						Place Order
 					</div>
 					<div class="card-body">
 						<div class="container-fluid">
 							<div class="form-group">
-								<label for="exampleInputEmail1">Search Term:</label>
-								<input type="text" class="form-control" id="searchTermID"
-									aria-describedby="emailHelp" />
+								<input type="text" class="form-control" id="orderID" />
 							</div>
 							</br>
-							<button type="button" class="btn bg-light" id="searchButton">Search</button>
-							<button type="button" class="btn bg-light" id="clearButton">Clear</button>
+							<button type="button" class="btn bg-light" id="orderButton">Send</button>
 						</div>
 					</div>
 				</div>
@@ -50,17 +43,11 @@
 			<div class="col-sm-3">
 				<div class="card">
 					<div class="card-header text-center">
-
-						<button data-animal="dog">Dog</button>
-						<button data-animal="cat">Cat</button>
-						<button data-animal="snake">Snake</button>
-						<button data-animal="horse">Horse</button>
-						<button data-animal="gorilla">Gorilla</button>
-						<button data-animal="lion">Lion</button>
+						Waiting Area
 					</div>
 					<div class="card-body">
-						<section id="sectionDisplay">
-
+						<section id="waitingDisplay">
+							<button type="button" class="btn bg-light" id="pickUpButton">PickUp</button>
 						</section>
 					</div>
 				</div>
@@ -69,29 +56,17 @@
 			<div class="col-sm-3">
 				<div class="card">
 					<div class="card-header text-center">
-
-						<button data-animal="dog">Dog</button>
-						<button data-animal="cat">Cat</button>
-						<button data-animal="snake">Snake</button>
-						<button data-animal="horse">Horse</button>
-						<button data-animal="gorilla">Gorilla</button>
-						<button data-animal="lion">Lion</button>
+						PickedUp Area
 					</div>
 					<div class="card-body">
-						<section id="sectionDisplay">
+						<section id="pickUpDisplay">
 
 						</section>
 					</div>
 				</div>
 			</div>
-
-
-
 		</div>
 	</div>
-	{{!-- </form> --}}
-	{{!-- </div> --}}
-
 	{{!-- <script type="text/javascript" src="./assets/javascript/javascript.js"></script> --}}
 </body>
 
