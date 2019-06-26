@@ -8,8 +8,8 @@ require("./config/orm")(app);
 
 
 module.exports = function (app) {
-    app.get("*", function(req, res) {
+    app.get("/", function(req, res) {
         // res.send("Welcome to friend finder home")
-        res.sendFile(path.join(__dirname, "../../controllers/tacos_controller.js"));
+        res.sendFile(path.join(__dirname, "./controllers/tacos_controller"));
       });
     };
