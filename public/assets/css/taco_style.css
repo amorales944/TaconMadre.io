@@ -1,0 +1,10 @@
+.jumbotron {
+    background-color: white;
+    /* color: white; */
+    height: 200px;
+    
+}
+
+.card   {
+    display: inline-block;
+}
